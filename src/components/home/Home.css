@@ -1,0 +1,26 @@
+.hero-body {
+  text-align: center;
+  padding: 40px 0;
+  background-image: linear-gradient(to bottom, #00000052, #00000052),
+    url("https://img.freepik.com/free-photo/delicious-food-white-plate_144627-34705.jpg?w=740&t=st=1651088776~exp=1651089376~hmac=e435ec65796aaed3355808c22b9e44d703279e0bf5fe9ef5e1ff9d4538cb3909");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h4 {
+  color: white;
+}
+h1 {
+  color: white;
+  font-size: 70px;
+  margin-bottom: 30px;
+}
+p {
+  color: white;
+}

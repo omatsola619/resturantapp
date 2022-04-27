@@ -1,0 +1,132 @@
+.Footer {
+  background-color: #e2ba08d3;
+  display: flex;
+  /* height: 100%;
+    width: 100%; */
+  /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+}
+.Footer > .Footer-container {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.Footer-logo {
+  padding-left: 20px;
+  font-weight: 700;
+  font-size: 40px;
+  margin: 25px;
+  color: rgb(255, 16, 16);
+  padding-top: 20px;
+}
+.social-icon {
+  display: flex;
+  margin-bottom: 30px;
+}
+.Footer > .social-icon > .social-item {
+  height: 20px;
+  width: 20%;
+  margin: 0 50px;
+}
+.social-item {
+  padding-left: 30px;
+  padding-bottom: 40px;
+}
+.social-item > img {
+  height: 30px;
+  width: 30px;
+  filter: grayscale(1);
+}
+.social-item > img:hover {
+  filter: grayscale(0);
+}
+.link {
+  padding-left: 25%;
+  padding-top: 60px;
+  color: white;
+}
+.link > p {
+  font-weight: 500;
+  font-size: 30px;
+}
+.link > ul {
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
+}
+.Footer > .newsLetter {
+  float: right;
+  width: 50%;
+  height: 200px;
+  padding-top: 80px;
+  padding-left: 250px;
+}
+.Footer > .newsLetter > p {
+  font-size: 23px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: white;
+  font-weight: 700;
+}
+.newsLetter > input {
+  border-radius: 5px;
+  height: 20px;
+  width: 150px;
+  border-color: white;
+  background-color: transparent;
+}
+.Footer > .newsLetter > .subscribe {
+  padding-top: 5px;
+}
+.Footer > .newsLetter > .subscribe > .btn {
+  height: 25px;
+  width: 70px;
+  border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+  .Footer {
+    background-color: gray;
+    flex-direction: column;
+    height: 10%;
+  }
+  .Footer-logo {
+    padding-left: 35%;
+  }
+  .social-icon {
+    padding-left: 35%;
+    margin-bottom: 20px;
+  }
+  .link {
+    padding-left: 45%;
+  }
+  .Footer > .Footer-container {
+    height: 50%;
+  }
+  .Footer > .newsLetter {
+    padding-left: 45%;
+  }
+}
+@media (min-width: 700px) {
+  .Footer {
+    position: relative;
+    width: 100%;
+  }
+  .Footer > .link {
+    padding-right: 80%;
+  }
+
+  .Footer > .newsLetter {
+    position: absolute;
+    padding-left: 70%;
+    align-items: center;
+  }
+  .newsLetter > p {
+    padding-right: 50px;
+    width: 20%;
+    text-align: left;
+  }
+}
